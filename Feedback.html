@@ -1,0 +1,115 @@
+<!--Eunice Munsod, Final Project, 11/26/24-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Feedback</title>
+        <meta charset="utf-8" />
+        <link href="movie.css" rel="stylesheet" type="text/css">
+        <!-- This code is an icon/logo for a tab.--> 
+        <link rel="icon" type="image/x-icon" href="icon.png">
+        <!-- This code is used to have a proper format in various devices.-->
+        <meta name="viewport" contents="width=device-width, initial-scal=1.0">
+        <!-- This script is for the checkbox to be a required field-->
+        <script>
+            function validateform(event){
+                const checkboxes = document.querySelectorAll('input[name="genre"]:checked');
+                if(checkboxes.length===0){
+                    alert("Please select atleast one.");
+                    event.preventDefault();
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <!-- I added a background rgba with the opacity .9 which makes the background a bit transparent to make the text visible and to match the webpage-->
+        <div style="background: rgba(30,30,30,.9); margin: auto; padding: 20px; border-radius: 10px">
+            <p style="text-align: right">
+                 <!-- navlink is for the text to be highlighted when the curson is pointing on it-->
+                <a href="Log-in.html" style="font-family: Lucida Sans; color: #ff8aae"><b class="navlinks">Log-in |</b></a>
+                <a href="Sign-up.html" style="font-family: Lucida Sans; color: #ff8aae"><b class="navlinks">Sign-up</b></a>
+            </p>
+            <!-- This is the largest size of heading-->
+            <h1 style="font-family: Cambria; font-size: 50px; line-height: 45px">🎥ENTERTAINMENT FILMS</h1>
+            <!-- This is horizontal line to add definition between the headings and the content.-->
+            <hr>
+            <!-- This is the smaller subheading-->
+            <h3 style="font-family: Roboto; font-size: larger">Please give us a Feedback if you want something to add or improve to our website!</h3>
+            <div style="background: rgba(167, 193, 222, 0.6); margin: auto; padding: 0 15px; text-align: left; border-radius: 10px">
+                <form action="sbutton.html" onsubmit="validateform(event)">
+                    <!-- Fieldset and legends is for the set of questions to  be sperate and for the command of required field to work since it has 4 sets-->
+                    <br>
+                    <fieldset>
+                    <legend><b>Title of the movie, series, etc. you want us to upload in our website:</b></legend>
+                    <label for="mname" style="font-family: Gill Sans"></label>
+                    <input type="text" id="m1name" name="title" maxlength="70" size="70"><br>
+                    <input type="text" id="m2name" name="title" maxlength="70" size="70"><br>
+                    <input type="text" id="m3name" name="title" maxlength="70" size="70"><br>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                    <legend><b>Rate us!</b></legend>
+                    <input type="radio" id="R1" name="housed" value="R1" required>
+                    <label for="R1" style="font-family: Gill Sans">1</label><br>
+                    <input type="radio" id="R2" name="housed" value="R2">
+                    <label for="R2" style="font-family: Gill Sans">2</label><br>
+                    <input type="radio" id="R3" name="housed" value="R3">
+                    <label for="R3" style="font-family: Gill Sans">3</label><br>
+                    <input type="radio" id="R4" name="housed" value="R4">
+                    <label for="R4" style="font-family: Gill Sans">4</label><br>
+                    <input type="radio" id="R5" name="housed" value="R5">
+                    <label for="R5" style="font-family: Gill Sans">5</label><br>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                    <legend><b>Select atleast one genre that entertains you the most:</b></legend>
+                    <input type="checkbox" id="Horror" name="genre" value="Horror">
+                    <label for="Horror">Horror</label><br>                    
+                    <input type="checkbox" id="Comedy" name="genre" value="Comedy">
+                    <label for="Comedy">Comedy</label><br>                    
+                    <input type="checkbox" id="Romance" name="genre" value="Romance">
+                    <label for="Romance">Romance</label><br>                    
+                    <input type="checkbox" id="Action" name="genre" value="Action">
+                    <label for="Action">Action</label><br>                    
+                    <input type="checkbox" id="Thriller" name="genre" value="Thriller">
+                    <label for="Thriller">Thriller</label><br>                    
+                    <input type="checkbox" id="Drama" name="genre" value="Drama">
+                    <label for="Drama">Drama</label><br>                    
+                    <input type="checkbox" id="Fantasy" name="genre" value="Fantasy">
+                    <label for="Fantasy">Fantasy</label><br>                    
+                    <input type="checkbox" id="Sci-fi" name="genre" value="Sci-fi">
+                    <label for="Sci-fi">Sci-fi</label><br>                    
+                    <input type="checkbox" id="Mystery" name="genre" value="Mystery">
+                    <label for="Mystery">Mystery</label><br>                    
+                    <input type="checkbox" id="Adventure" name="genre" value="Adventure">
+                    <label for="Adventure">Adventure</label><br>                    
+                    <input type="checkbox" id="Animation" name="genre" value="Animation">
+                    <label for="Animation">Animation</label><br>                    
+                    <input type="checkbox" id="Crime" name="genre" value="Crime">
+                    <label for="Drama">Crime</label><br>                    
+                    <input type="checkbox" id="others" name="genre" value="others">
+                    <label for="Others">Others</label><br>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                    <legend><b>Suggestions:</b></legend>
+                    <label for="Suggestions:" style="font-family: Gill Sans"></label>
+                    <input type="text" id="Suggestions:" name="Suggestions:" maxlength="70" size="70" required><br>
+                    </fieldset>
+                    <br>
+                    <!-- I added the submit button inside the <form> and <div> tag for the required field to work-->
+                    <!-- class="submitbutton" is to add the design in the submit button-->
+                    <input type="submit" value="Submit" class="submitbutton">
+                </form>
+                <br>
+            </div>
+            <br>
+            <hr>
+            <p>
+                <!-- navlink is for the text to be highlighted when the curson is pointing on it-->
+                <a href="index.html" style="font-family: Lucida Sans; color: #ff8aae"><b class="navlinks">Home |</b></a>
+                <a href="Feedback.html" style="font-family: Lucida Sans; color: #ff8aae"><b class="navlinks">Feedback |</b></a>
+                <a href="M-List.html" style="font-family: Lucida Sans; color: #ff8aae"><b class="navlinks">Movie List</b></a>
+            </p>
+        </div>
+    </body>
+</html>

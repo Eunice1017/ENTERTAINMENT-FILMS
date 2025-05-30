@@ -1,0 +1,62 @@
+<!-- Eunice Munsod, Final Project, 11/28/24-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Log-in</title>
+        <meta charset="utf-8" />
+        <link href="movie.css" rel="stylesheet" type="text/css">
+        <!-- This code is an icon/logo for a tab.--> 
+        <link rel="icon" type="image/x-icon" href="icon.png">
+        <!-- This code is used to have a proper format in various devices.-->
+        <meta name="viewport" contents="width=device-width, initial-scal=1.0">
+    </head>
+    <body>
+        <!-- I added a background rgba with the opacity .9 which makes the background a bit transparent to make the text visible and to match the webpage-->
+        <div style="background: rgba(30,30,30,.9); margin: auto; padding: 20px; border-radius: 10px">
+            <p style="text-align: right">
+                <!-- I only added sign up button because this is already the log in page-->
+                <!-- navlink is for the text to be highlighted when the curson is pointing on it-->
+                <a href="Sign-up.html" style="font-family: Lucida Sans; color: #ff8aae"><b class="navlinks">| Sign-up |</b></a>
+            </p>
+            <!-- This is the largest size of heading-->
+            <h1 style="font-family: Franklin Gothic Medium; font-size: 50px; line-height: 45px">🎥Entertainment Films</h1>
+            <!-- This is the smaller subheading-->
+            <h3 style="font-family: Roboto; font-size: larger">Log In!</h3>
+            <!-- This is horizontal line to add definition between the headings and the content.-->
+            <hr>
+            <br>
+            <!-- I added a background rgba with the opacity .7 which makes the background a bit transparent to make the text visible and to match the webpage-->
+            <div style="background: rgba(167, 193, 222, 0.7); margin: auto; padding: 20px; border-radius: 10px">
+                <div style="text-align: center">
+                    <!-- I added a padding to the top so that it looks more formal.-->
+                    <p style="font-family: Cambria; padding-top: 10px"><b>Log In to watch your favourite shows!:</b></p>
+                    <!-- This action is for the submit button.-->
+                    <form action="Suclog-in.html">
+                        <!-- For the input I added pattern and type for each field, pattern it is only the accepted characters and type is what will pop up if they enter invalid characters or format. I also changed the type of email and password so that the field will identify the format that should show on the screen.-->
+                        <div>
+                        <label for="email" style="font-family: Gill Sans">Email:</label><br>
+                        <input type="email" id="email" name="email" maxlength="30" size="30" required
+                               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                               title="Please enter a valid email address (e.g., example@gmail.com)."><br>
+                        <label for="password" style="font-family: Gill Sans">Password:</label><br>
+                        <input type="password" id="password" name="password" minlength="8" maxlength="30" size="30" required
+                               pattern="[A-Za-z0-9]+"
+                               title="Only letters and numbers are allowed"><br><br>
+                        <!-- I added the submit button inside the <form> and <div> tag for the required field to work-->
+                        <!-- class="submitbutton" is to add the design in the submit button-->
+                        <input type="submit" value="Submit" class="submitbutton">    
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <br>
+            <hr>
+                <p>
+                    <!-- navlink is for the text to be highlighted when the curson is pointing on it-->
+                    <a href="index.html" style="font-family: Lucida Sans; color: #ff8aae"><b class="navlinks">Home |</b></a>
+                    <a href="Feedback.html" style="font-family: Lucida Sans; color: #ff8aae"><b class="navlinks">Feedback |</b></a>
+                    <a href="M-List.html" style="font-family: Lucida Sans; color: #ff8aae"><b class="navlinks">Movie List</b></a>
+                </p>
+        </div>    
+    </body>
+</html>
